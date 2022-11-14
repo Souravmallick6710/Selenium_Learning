@@ -1,0 +1,181 @@
+{
+  "id": "c102e4cd-ceaa-445b-a7fc-9489cf4a3ae0",
+  "version": "2.0",
+  "name": "IDE-Training-1",
+  "url": "https://jqueryui.com/",
+  "tests": [{
+    "id": "39e24589-aacb-48e2-9056-4f737ebd6a8e",
+    "name": "FirstTest",
+    "commands": [{
+      "id": "2982a709-3782-4d64-afa8-013ea1d85895",
+      "comment": "",
+      "command": "open",
+      "target": "https://jqueryui.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3fdb0c97-81e5-4364-bb23-f5bdf4653806",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1124x598",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "122f0ad1-23ce-4b8d-bedf-b0a4c1b8df62",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Autocomplete",
+      "targets": [
+        ["linkText=Autocomplete", "linkText"],
+        ["css=.widget:nth-child(2) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Autocomplete')]", "xpath:link"],
+        ["xpath=//div[@id='sidebar']/aside[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://jqueryui.com/autocomplete/']", "xpath:href"],
+        ["xpath=//aside[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Autocomplete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0c81f0f-9ba4-4b5c-b181-7c64ba10642b",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "a540a179-5f92-4efd-aa3d-94b39696ce51",
+      "comment": "",
+      "command": "click",
+      "target": "id=tags",
+      "targets": [
+        ["id=tags", "id"],
+        ["css=#tags", "css:finder"],
+        ["xpath=//input[@id='tags']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4079304e-04b1-43dc-8b4e-dd6ee79f3750",
+      "comment": "",
+      "command": "type",
+      "target": "id=tags",
+      "targets": [
+        ["id=tags", "id"],
+        ["css=#tags", "css:finder"],
+        ["xpath=//input[@id='tags']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "MitelCloud"
+    }, {
+      "id": "240785e0-7c30-4006-9c07-803336729636",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=tags",
+      "targets": [
+        ["id=tags", "id"],
+        ["css=#tags", "css:finder"],
+        ["xpath=//input[@id='tags']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "74e30e16-5ba6-4a62-9666-289e78b67cea",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "94b20a30-ab2e-4b04-8ad7-85b022213b99",
+    "name": "SecondTest",
+    "commands": [{
+      "id": "819045ae-efdd-4563-9988-0ec5368a83fb",
+      "comment": "",
+      "command": "open",
+      "target": "https://omayo.blogspot.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e5fa2ea-e182-4033-900b-8e4194f1a857",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1124x598",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65eb3ef3-3b01-4056-b668-c7e9329b2ee4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#HTML46 button",
+      "targets": [
+        ["css=#HTML46 button", "css:finder"],
+        ["xpath=//div[@id='HTML46']/div/button", "xpath:idRelative"],
+        ["xpath=//div[22]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Double click Here')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "87881ad3-da3d-4055-847c-5d3cab3754cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#HTML46 button",
+      "targets": [
+        ["css=#HTML46 button", "css:finder"],
+        ["xpath=//div[@id='HTML46']/div/button", "xpath:idRelative"],
+        ["xpath=//div[22]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Double click Here')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21a07b38-7a6c-4250-8043-897254716ee7",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "xpath=//div[@id='HTML46']/div/button",
+      "targets": [
+        ["css=#HTML46 button", "css:finder"],
+        ["xpath=//div[@id='HTML46']/div/button", "xpath:idRelative"],
+        ["xpath=//div[22]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Double click Here')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b4fa16e-b296-4e73-ab56-683e7eca2f70",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Double Click Successfull",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b32960a2-bfeb-4d7a-a923-c1785d5131d3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2c0e4561-cb90-4eb2-9148-0113eaba4f90",
+    "name": "ThirdTest",
+    "commands": [{
+      "id": "2d2206fd-a75e-421a-a60e-db480c7c411c",
+      "comment": "",
+      "command": "run",
+      "target": "FirstTest",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "79c6b013-1c7c-4f84-8581-b224398c332b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["39e24589-aacb-48e2-9056-4f737ebd6a8e"]
+  }],
+  "urls": ["https://jqueryui.com/", "https://omayo.blogspot.com/"],
+  "plugins": []
+}

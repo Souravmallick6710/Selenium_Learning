@@ -1,0 +1,32 @@
+---- Move to the directory where selenium grid is downloaded---------
+cd C:\D-Drive\TrainingDOcs\Selenium_Internal\grid
+
+---- Open cmd prompt and run below commands in order(Move to selenium grid folder) ------------
+
+java -jar selenium-server-4.4.0.jar event-bus --publish-events tcp://10.8.137.143:4442 --subscribe-events tcp://10.8.137.143:4443 --port 5557
+
+java -jar selenium-server-4.4.0.jar sessionqueue --port 5559
+
+java -jar selenium-server-4.4.0.jar sessions --publish-events tcp://10.8.137.143:4442 --subscribe-events tcp://10.8.137.143:4443 --port 5556
+
+
+java -jar selenium-server-4.4.0.jar distributor --publish-events tcp://10.8.137.143:4442 --subscribe-events tcp://10.8.137.143:4443 --sessions http://10.8.137.143:5556 --sessionqueue http://10.8.137.143:5559 --port 5553 --bind-bus false
+
+
+java -jar selenium-server-4.4.0.jar router --sessions http://10.8.137.143:5556 --distributor http://10.8.137.143:5553 --sessionqueue http://10.8.137.143:5559 --port 4444
+
+
+---- Configuring Node to the distributor -----------
+cd C:\SeleniumGrid
+java -jar selenium-server-4.4.0.jar node --publish-events tcp://10.8.137.143:4442 --subscribe-events tcp://10.8.137.143:4443
+
+selenium-server-4.4.0.jar
+
+10.8.137.143
+
+192.168.0.102
+
+C:\D-Drive\TrainingDOcs\Selenium_Internal\grid
+
+from selenium.webdriver.chrome.service import Service as ChromeService
+
