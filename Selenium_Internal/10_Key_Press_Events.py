@@ -19,7 +19,7 @@ try:
         browser.get("https://en.wikipedia.org")
         print(browser.title)
         data = browser.find_element(by=By.ID, value="searchInput")
-        data.send_keys("Python")
+        data.send_keys("Python3")
 
         # Using Keys module to control keyboard operations
         data.send_keys(Keys.ENTER)
